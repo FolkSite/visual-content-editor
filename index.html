@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Content Editor</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<div class="editor">
+			<div class="content-editor-actions">
+				<button id="bold"><b>Bold</b></button>
+				<button id="italic"><i>Italic</i></button>
+				<button id="image">Image</button>
+			</div>
+			<div id="content-editor" class="content-editor" data-default-content="Write content here..."></div>
+		</div>
+		
+		<script src="jquery.min.js"></script>
+		<script src="editor.js"></script>
+		<script type="text/javascript">
+		var contentEdit = document.getElementById('content-editor');
+		var editor = new Editor(contentEdit);
+		</script>
+	</body>
+
+</html>
